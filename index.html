@@ -3,20 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="I denna sida finns allt för att hjälpa användaren lära sig kod.">
   <title>idk</title>
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monoton&family=Rubik+Mono+One&family=League+Gothic&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'">
 
 
 
@@ -49,44 +47,47 @@
         <div class="sliderimage slide1">
           <h1>Lär dig koda – steg för steg</h1>
           <p>Upptäck kraften i programmering med våra guider och övningar.</p>
-          <button onclick="merinfo()">Mer info</button>
-          <img src="1.0.jpg" alt="En man som lär sig att koda">
+          <img src="1.0 (1).jpg" alt="En man som lär sig att koda" fetchpriority="high">
 
         </div>
-        <div class="sliderimage slide2"><img src="ligma.jpg" alt=""></div>
-        <div class="sliderimage slide3"><img src="wows.jpg" alt=""></div>
-        <div class="sliderimage slide4"><img src="wowwwwww.avif" alt=""></div>
-        <div class="sliderimage slide5"><img src="1.0.jpg" alt=""></div>
+        <div class="sliderimage slide2"><img src="ligma (1).jpg" alt="En glad man som programmerar." fetchpriority="high"></div> <!--Fetchpriority high, vet ej vad den gör men behöver det för lighthouse.-->
+        <div class="sliderimage slide3"><img src="wows (1).jpg" alt="Glad mor och dotter som kodar tillsammas." fetchpriority="high"></div>
+        <div class="sliderimage slide4"><img src="wowwwwww.jpg" alt="En team som hjälpar varanda med kod" fetchpriority="high"></div>
+        <div class="sliderimage slide5"><img src="1.0 (1).jpg" alt="En man som lär sig att koda" fetchpriority="high"></div> 
 
       </figure>
 
     </div>
 
     <div class="varför">
-      <div class="rubrik1"><h1>Varför oss?</h1></div>
-        <div class="rubriktext1"><p>Vi kombinerar erfarenhet, kvalitet och personligt engagemang. Hos oss får du pålitliga lösningar, tydlig
-          kommunikation och ett resultat som är anpassat efter dina behov. Vi håller vad vi lovar – hela vägen.</p></div>
+      <div class="rubrik1">
+        <h1>Varför oss?</h1>
+      </div>
+      <div class="rubriktext1">
+        <p>Vi kombinerar erfarenhet, kvalitet och personligt engagemang. Hos oss får du pålitliga lösningar, tydlig
+          kommunikation och ett resultat som är anpassat efter dina behov. Vi håller vad vi lovar – hela vägen.</p>
+      </div>
 
-        <div class="card-grids">
-          <div class="card">
-            <div class="card-icon">🧠</div>
-            <h3>Pratisk Kodning</h3>
-            <p>Elever bygger riktiga projekt och lär sig genom att skapa.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon">🧠</div>
-            <h3></h3>
-            <p></p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon">🧠</div>
-            <h3></h3>
-            <p></p>
-          </div>
-
+      <div class="card-grids">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Pratisk Kodning</h3>
+          <p>Elever bygger riktiga projekt och lär sig genom att skapa.</p>
         </div>
+
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3></h3>
+          <p></p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3></h3>
+          <p></p>
+        </div>
+
+      </div>
 
 
 

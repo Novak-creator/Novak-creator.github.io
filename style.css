@@ -14,8 +14,10 @@ body {
     radial-gradient(circle at 20% 80%, rgba(0, 229, 255, 0.25), transparent 60%),
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.25), transparent 60%),
     #05070D;
+    position: relative;
+ }   
 
-}
+
 
 
 nav {
@@ -121,6 +123,7 @@ nav .nav-grupp {
     width: 55vw;
     border-left: 1px solid black;
     height: 100%;
+    
 
     
 }
@@ -151,18 +154,7 @@ nav .nav-grupp {
     text-decoration: overline;
 }
 
-.slide1 button {
-    position: absolute;
-    left: 225px;
-    bottom: 50px;
-    width: 10vw;
-    height: 3vw;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 5px;
-}
+
 
 .slide2 {
     background: linear-gradient(135deg, #001220, #002A3A, #00475F);;
@@ -200,7 +192,9 @@ nav .nav-grupp {
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
     border: 15px;
-    min-height: 500px;
+    height: 650px;
+    border-radius: 30px;
+    border: 2px solid #00475F;
 
 }
 
@@ -218,6 +212,7 @@ nav .nav-grupp {
     left: 24vw;
     color: white;
     text-shadow: 0 0 8px #00E5FF;
+    font-size: 1.2rem;
 
     
 }
@@ -255,6 +250,13 @@ nav .nav-grupp {
     font-size: 3rem;
     color: #00F0FF;
     margin-bottom: 16px;
+
+}
+
+.card p, .card h3 {
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+
 
 }
 
