@@ -7,53 +7,38 @@
   <title>idk</title>
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="HeaderFooter.css" as="style">
+  <link rel="stylesheet" href="HeaderFooter.css" />
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monoton&family=Rubik+Mono+One&family=League+Gothic&display=swap"
-    rel="stylesheet"
-    media="print"
-    onload="this.media='all'">
+    rel="stylesheet" media="print" onload="this.media='all'">
 
 
 
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="nav-grupp">
-        <div class="logo">KodKraft</div>
-        <ul class="nav-links">
-          <li><a href="index.html">Startsida</a></li>
-          <li><a href="kurser.html">Kurser</a></li>
-          <li><a href="omoss.html">Om oss</a></li>
-          <li><a href="priser.html">Priser</a></li>
-        </ul>
-      </div>
-      <div class="btns"></div>
-      <button class="btn">Logga in</button>
-
-
-
-
-    </nav>
+  <header id="header"> <!--Kolla på script.js och HeaderFooter.CSS för att se min Header/Footer kod-->
   </header>
 
   <main>
     <div id="slider">
       <figure> <!--Fick detta av en youtube video, den fungerar som en div men är en semantisk element.-->
         <div class="sliderimage slide1">
-          <h1>Lär dig koda – steg för steg</h1>
-          <p>Upptäck kraften i programmering med våra guider och övningar.</p>
           <img src="1.0 (1).jpg" alt="En man som lär sig att koda" fetchpriority="high">
 
         </div>
-        <div class="sliderimage slide2"><img src="ligma (1).jpg" alt="En glad man som programmerar." fetchpriority="high"></div> <!--Fetchpriority high, vet ej vad den gör men behöver det för lighthouse.-->
-        <div class="sliderimage slide3"><img src="wows (1).jpg" alt="Glad mor och dotter som kodar tillsammas." fetchpriority="high"></div>
-        <div class="sliderimage slide4"><img src="wowwwwww.jpg" alt="En team som hjälpar varanda med kod" fetchpriority="high"></div>
-        <div class="sliderimage slide5"><img src="1.0 (1).jpg" alt="En man som lär sig att koda" fetchpriority="high"></div> 
+        <div class="sliderimage slide2"><img src="ligma (1).jpg" alt="En glad man som programmerar."
+            fetchpriority="high"></div> <!--Fetchpriority high, vet ej vad den gör men behöver det för lighthouse.-->
+        <div class="sliderimage slide3"><img src="wows (1).jpg" alt="Glad mor och dotter som kodar tillsammas."
+            fetchpriority="high"></div>
+        <div class="sliderimage slide4"><img src="wowwwwww.jpg" alt="En team som hjälpar varanda med kod"
+            fetchpriority="high"></div>
+        <div class="sliderimage slide5"><img src="1.0 (1).jpg" alt="En man som lär sig att koda" fetchpriority="high">
+        </div>
 
       </figure>
 
@@ -77,14 +62,14 @@
 
         <div class="card">
           <div class="card-icon">🧠</div>
-          <h3></h3>
-          <p></p>
+          <h3>Kurser för alla nivåer</h3>
+          <p>Oavsett om du vill börja med Python, JavaScript eller något helt annat, hittar du en kurs som passar dig.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">⚡</div>
-          <h3></h3>
-          <p></p>
+          <h3>Projektbaserat lärande</h3>
+          <p>Skapa riktiga projekt och se dina idéer komma till liv – från hemsidor till spel och appar.</p>
         </div>
 
       </div>
@@ -93,12 +78,101 @@
 
     </div>
 
+    <div class="kursinfo">
+
+      
+      <div class="section1">
+
+
+
+
+
+       
+        <div class="rullande">
+          <div class="rullgrupp">
+            <div class="kortbild"><p>Python</p></div>
+            <div class="kortbild"><p>JavaScript</p></div>
+            <div class="kortbild"><p>Java</p></div>
+            <div class="kortbild"><p>C#</p></div>
+            <div class="kortbild"><p>C</p></div>
+            
+          </div>
+
+
+          <div class="rullgrupp">
+            <div class="kortbild"><p>Python</p></div>
+            <div class="kortbild"><p>JavaScript</p></div>
+            <div class="kortbild"><p>Java</p></div>
+            <div class="kortbild"><p>C#</p></div>
+            <div class="kortbild"><p>C</p></div>
+           
+          </div>
+        </div>
+
+        <div class="rullande">
+          <div class="rullgrupp">
+            <div class="kortbild"><p>C++</p></div>
+            <div class="kortbild"><p>TypeScript</p></div>
+            <div class="kortbild"><p>Go</p></div>
+            <div class="kortbild"><p>Rust</p></div>
+            <div class="kortbild"><p>PHP</p></div>
+            
+          </div>
+
+
+          <div class="rullgrupp">
+            <div class="kortbild"><p>C++</p></div>
+            <div class="kortbild"><p>TypeScript</p></div>
+            <div class="kortbild"><p>Go</p></div>
+            <div class="kortbild"><p>Rust</p></div>
+            <div class="kortbild"><p>PHP</p></div>
+            
+          </div>
+        </div>
+
+        <div class="rullande">
+          <div class="rullgrupp">
+            <div class="kortbild"><p>Kotlin</p></div>
+            <div class="kortbild"><p>Swift</p></div>
+            <div class="kortbild"><p>Ruby</p></div>
+            <div class="kortbild"><p>MATLAB</p></div>
+            <div class="kortbild"><p>Dart</p></div>
+            
+          </div>
+
+
+          <div class="rullgrupp">
+            <div class="kortbild"><p>Kotlin</p></div>
+            <div class="kortbild"><p>Swift</p></div>
+            <div class="kortbild"><p>Ruby</p></div>
+            <div class="kortbild"><p>MATLAB</p></div>
+            <div class="kortbild"><p>Dart</p></div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <h1>Information Om Kurser</h1>
+        <p>Utforska våra kurser och få en tydlig översikt över vad varje kurs erbjuder, hur den är upplagd och vilka möjligheter den öppnar.</p>
+      </div>
+    </div>
+
 
 
 
   </main>
 
-  <footer>
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 KodKraft. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Sekretesspolicy</a>
+        <a href="#">Användarvilkor</a>
+        <a href="#">Kontaka Oss</a>
+      </div>
+    </div>
+    
 
   </footer>
 </body>
