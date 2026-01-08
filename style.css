@@ -11,7 +11,7 @@ body {
     color: white;
     background:
     linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(124, 58, 237, 0.12)),
-    radial-gradient(circle at 20% 80%, rgba(0, 229, 255, 0.25), transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(0, 229, 255, 0.25), transparent 60%),   /*fick detta från chat*/
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.25), transparent 60%),
     #05070D;
     position: relative;
@@ -20,7 +20,7 @@ body {
 
 
 #slider {
-    overflow: hidden;
+    overflow: hidden; /*Allt utan för slidern är gömt*/
     height: 500px;
     background-color:#0A0A0F;
     margin: 0 2vw;
@@ -82,7 +82,7 @@ body {
     20% { left: 0; }
     25% { left: -100%;}
     45% {left: -100%;}
-    50% {left: -200%;}
+    50% {left: -200%;}   /*slider animation*/
     70% {left: -200%;}
     75% {left: -300%;}
     95% {left: -300%;}
@@ -97,29 +97,26 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
     border: 15px;
-    height: 700px;
     border-radius: 30px;
     border: 4px solid #00475F;
-
 }
+
 
 .rubrik1 {
-    position: absolute;
     color: #00F0FF;
     text-shadow: 0 0 8px #00F0FF88;
-    left: 37vw;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
 }
 .rubriktext1 {
-    position:absolute;
-    top: 100px;
-    max-width: 50%;
-    left: 24vw;
     color: white;
     text-shadow: 0 0 8px #00E5FF;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 
-    
 }
 
 
@@ -128,19 +125,24 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-auto-rows: 350px;
     gap: 24px;
-    position: relative;
-    top: 250px;
+    padding: 4rem;
+}
+
+@media (min-width:600px) {
+    .card-grids {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));  
+
+    }     
 }
 
 .card {
     background: rgba(255, 255, 255, 0.03); /*Fick dessa värden och färger från Chatgpt*/
     border: 1px solid rgba(0, 240, 255, 0.3);
     border-radius: 15px;
-    padding: 28px;
     color: #E4F1FF;
     backdrop-filter: blur(8px);
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.15), inset 0 0 12px rgba(0, 240, 255, 0.08);
-    margin: 0 10px;
+
     
 
     transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -168,6 +170,7 @@ body {
     text-shadow: 0 0 8px #00E5FF;
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -267,7 +270,10 @@ body {
 }
 
 
-/*Detta är början av priser.html sidan.*/
+
+
+
+/*Detta är början av priser.html sidan, återanvänder lite kod från index.html.*/ 
 
 .firstcard {
     
@@ -287,7 +293,7 @@ body {
 .card2 {
     border: 1px solid rgba(0, 240, 255, 0.3);
     border-radius: 15px;
-    padding: 28px;
+    padding: 10px;
     color: #E4F1FF;
     backdrop-filter: blur(8px);
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.15), inset 0 0 12px rgba(0, 240, 255, 0.08);
@@ -306,6 +312,7 @@ body {
     list-style: none;
     gap: 1em;
     margin: 0.2em;
+    flex-wrap: wrap;
 
 }
 
@@ -318,3 +325,140 @@ body {
     box-shadow:0 0 25px rgba(0, 240, 255, 0.35), inset 0 0 18px rgba(0, 240, 255, 0.15);
 
 }
+
+/*Detta är början av omoss.html*/
+
+.aboutus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+    
+}
+
+.aboutus h1 {
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+    font-size: 4em;
+
+}
+
+.ourvision {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6rem;
+
+}
+
+.ourvision h1 {
+    font-size: 3.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+}
+
+.ourvisionp {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    font-size: 1.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;color: white;
+
+}
+
+.ourmission {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgba(170, 5, 246, 0.3);
+    padding: 6rem;
+
+}
+
+.ourmission h1 {
+    font-size: 3.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+}
+
+.ourmissionp {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    font-size: 1.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;color: white;
+
+}
+
+.ourvaules {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgba(3, 54, 171, 0.3);
+    padding: 6rem;
+
+}
+
+.ourvaules h1 {
+    font-size: 3.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+}
+
+.ourvaulesp {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    font-size: 1.4em;
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;color: white;
+
+}
+
+.imgcontainer {
+    display: flex;
+    border: 5px solid black;
+    height: 300px;
+
+}
+
+.imggrid img {
+    width: 25vw;
+    height: 100%;
+    margin: 0;
+}
+
+/*Början av kurser.html*/
+
+
+.kurser {
+    background-color: rgba(170, 5, 246, 0.3);
+    padding: 3rem;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.card-grids3 {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-auto-rows: 250px;
+    gap: 24px;
+}
+
+.card-icon3 {
+    color: white;
+    text-shadow: 0 0 8px #00E5FF;
+    justify-content: center;
+    display: flex;
+    border-bottom: 3px solid #00E5FF;
+    font-size: 3rem;
+
+}
+
+
+
